@@ -48,7 +48,7 @@ time.sleep(3)  # Подождать применения сортировки
 
 # Основной цикл для сбора данных до достижения или превышения желаемого рейтинга
 rating = 5
-while float(my_rating) < float(rating):
+while float(my_rating) <= float(rating):
     while True:
         # Ожидать появления всех карточек товаров на странице
         wait = WebDriverWait(driver, timeout=30)
